@@ -28,7 +28,7 @@
         if (root==NULL)
         return;
         printf("Preorder Traversal: \t");
-        printf("%d->",root->data);
+        printf("%d \n",root->data);
         preorder(root->left);
         preorder(root->right);
         
@@ -38,7 +38,7 @@
         return;
         inorder(root->left);
         printf("Inorder Traversal: \t");
-        printf("%d->",root->data);
+        printf("%d \n",root->data);
         inorder(root->right);
     }
      void postorder(struct node*root){
@@ -47,7 +47,7 @@
         postorder(root->left);
         postorder(root->right);
         printf("Postorder Traversal: \t");
-        printf("%d->",root->data);
+        printf("%d \n",root->data);
     }
     
     int main() {
